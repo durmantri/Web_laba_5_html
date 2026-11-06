@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Резюме - Junior Network Engineer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .status-badge {
+        display: block;
+        width: fit-content;
+        margin: 8px auto 0 auto;
+        background-color: var(--bg-color);
+        color: var(--accent, #020203);
+        padding: 4px 12px;
+        border-radius: 12px;
+        font-weight: 600;
+        font-size: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="main-header">
+      <h1 class="status-badge">Богдан Добош Романович</h1>
+      <p><strong>Бажана посада:</strong> Junior Network Engineer</p>
+      <button id="theme-btn" class="theme-btn"></button>
+    </header>
+
+    <main class="layout-container">
+      <section class="card">
+        <h2>Контактні дані</h2>
+        <p>
+          <strong>Email:</strong> dobosh2026@gmail.com<br />
+          <strong>Телефон:</strong> +380 (50) 123-45-67<br />
+          <strong>Місто:</strong> Львів, Україна<br />
+          <strong>GitHub:</strong>
+          <a
+            href="https://github.com/durmantri/Web_laba_2"
+            target="_blank"
+            class="btn"
+            >github.com/profile</a
+          >
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Про мене</h2>
+        <p>
+          Мотивований фахівець із базовими знаннями конфігурації комп'ютерних
+          мереж, маршрутизації та комутації. Маю профільну освіту в галузі
+          кібербезпеки, розумію принципи безпеки мережних інфраструктур та
+          прагну розвиватися у сфері адміністрування мереж.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Досвід роботи</h2>
+        <h3>Стажер Junior Network Engineer</h3>
+        <p>
+          <em>ТОВ "Технології майбутнього" | Червень 2025 – Серпень 2025</em>
+        </p>
+        <ul>
+          <li>
+            Налаштування корпоративної мережі, подальша сегментація шляхом
+            створення VLAN.
+          </li>
+          <li>
+            Конфігурація базових параметрів мережевого обладнання та тестування
+            з'єднань.
+          </li>
+          <li>
+            Діагностика мережевих неполадок та моніторинг працездатності вузлів
+            за допомогою базових утиліт.
+          </li>
+        </ul>
+
+        <h3>Коментарі роботодавців</h3>
+        <div id="comments-container"></div>
+      </section>
+
+      <section class="card">
+        <h2>Освіта</h2>
+        <h3>Національний університет «Львівська політехніка»</h3>
+        <p>
+          <em>Бакалавр за спеціальністю «Кібербезпека» | 2025 – 2029</em>
+        </p>
+        <p>
+          Поглиблене вивчення алгоритмів, структур даних, реляційних баз даних,
+          об'єктно-орієнтованого програмування, симуляції та конфігурації
+          комп'ютерних мереж.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Навички</h2>
+        <ul class="skills-list">
+          <li>
+            <strong>Мережеві технології:</strong> TCP/IP, Cisco Packet Tracer,
+            VLAN, статична маршрутизація
+          </li>
+          <li><strong>Мови програмування:</strong> Python, HTML, CSS</li>
+          <li>
+            <strong>Технології та інструменти:</strong> Git, GitHub, VS Code
+          </li>
+          <li><strong>Операційні системи:</strong> Windows, Linux</li>
+          <li>
+            <strong>Мови:</strong> Українська (рідна), Англійська (Intermediate)
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer
+      id="footer"
+      style="
+        font-size: 0.9rem;
+        color: #666;
+        text-align: center;
+        margin-top: 20px;
+      "
+    ></footer>
+
+    <div id="feedback-modal" class="modal-overlay hidden">
+      <div class="card modal-card">
+        <button id="close-modal" class="modal-close">&times;</button>
+
+        <h2>Зворотний зв'язок</h2>
+        <form
+          action="https://formspree.io/f/xdeeerdg"
+          method="POST"
+          class="modal-form"
+        >
+          <div class="form-group">
+            <label for="name">Ім’я</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Ваше ім'я"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="example@gmail.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Номер телефону</label>
+            <input type="tel" id="phone" name="phone" placeholder="+380..." />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Повідомлення</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="3"
+              placeholder="Ваше повідомлення..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Надіслати</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
