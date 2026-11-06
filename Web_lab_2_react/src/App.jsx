@@ -12,7 +12,7 @@ import ThemeChange from "./components/ThemeChange";
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-950 dark:bg-slate-950 py-10 px-4 text-slate-800 dark:text-slate-100 font-sans transition-colors duration-300">
+    <div className="min-h-screen bg-emerald-50/40 dark:bg-slate-950 py-10 px-4 text-slate-800 dark:text-slate-100 font-sans transition-colors duration-300">
       <div className="space-y-6">
         <Header />
         <div className="max-w-[1200px] mx-auto flex justify-end px-2">
